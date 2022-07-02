@@ -39,14 +39,12 @@ The objective of this competition is to predict the probability that a customer 
 
 The dataset contains aggregated profile features for each customer at each statement date. Features are anonymized and normalized, and fall into the following general categories:
 
-```
-D_* = Delinquency variables
-S_* = Spend variables
-P_* = Payment variables
-B_* = Balance variables
-R_* = Risk variables
+- D_* = Delinquency variables
+- S_* = Spend variables
+- P_* = Payment variables
+- B_* = Balance variables
+- R_* = Risk variables
 
-```
 with the following features being categorical:
 
 ```['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68']```
