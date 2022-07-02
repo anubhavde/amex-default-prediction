@@ -1,4 +1,4 @@
-# American Express - Default Prediction
+# **American Express - Default Prediction**
 ##### Predict if a customer will default in the future
 
 ### Overview
@@ -64,3 +64,5 @@ Use the Kaggle API to access the dataset by running
 ```Python
 kaggle competitions download -c amex-default-prediction
 ```
+
+##### Part of Kaggle challenge
