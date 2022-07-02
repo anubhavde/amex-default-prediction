@@ -45,8 +45,12 @@ Note that the negative class has been subsampled for this dataset at 5%, and thu
 
 ### Files
 
-    train_data.csv - training data with multiple statement dates per customer_ID
-    train_labels.csv - target label for each customer_ID
-    test_data.csv - corresponding test data; your objective is to predict the target label for each customer_ID
-    sample_submission.csv - a sample submission file in the correct format
+- train_data.csv - training data with multiple statement dates per customer_ID
+- train_labels.csv - target label for each customer_ID
+- test_data.csv - corresponding test data; your objective is to predict the target label for each customer_ID
+- sample_submission.csv - a sample submission file in the correct format
 
+Use the Kaggle API to access the dataset by running
+```Python
+kaggle competitions download -c amex-default-prediction
+```
