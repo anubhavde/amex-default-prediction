@@ -1,2 +1,2 @@
-# amex-default-prediction
-Predict the probability that a customer does not pay back their credit card balance amount in the future based on their monthly customer profile.
+# American Express - Default Prediction
+#### Predict if a customer will default in the future
