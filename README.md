@@ -14,7 +14,7 @@ The dataset contains aggregated profile features for each customer at each state
 
 with the following features being categorical:
 
-['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68']
+```['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68']```
 
 Your task is to predict, for each customer_ID, the probability of a future payment default (target = 1).
 
