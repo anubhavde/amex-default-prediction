@@ -24,17 +24,29 @@ and D, the negative labels are given a weight of 20 to adjust for downsampling.
 
 This metric has a maximum value of 1.0.
 
+### Submission File
+For each ```customer_ID``` in the test set, you must predict a probability for the ```target``` variable. The file should contain a header and have the following format:
+```
+customer_ID,prediction
+00000469ba...,0.01
+00001bf2e7...,0.22
+0000210045...,0.98
+etc.
+```
+
 ### Data Description
 The objective of this competition is to predict the probability that a customer does not pay back their credit card balance amount in the future based on their monthly customer profile. The target binary variable is calculated by observing 18 months performance window after the latest credit card statement, and if the customer does not pay due amount in 120 days after their latest statement date it is considered a default event.
 
 The dataset contains aggregated profile features for each customer at each statement date. Features are anonymized and normalized, and fall into the following general categories:
 
-    D_* = Delinquency variables
-    S_* = Spend variables
-    P_* = Payment variables
-    B_* = Balance variables
-    R_* = Risk variables
+```
+D_* = Delinquency variables
+S_* = Spend variables
+P_* = Payment variables
+B_* = Balance variables
+R_* = Risk variables
 
+```
 with the following features being categorical:
 
 ```['B_30', 'B_38', 'D_114', 'D_116', 'D_117', 'D_120', 'D_126', 'D_63', 'D_64', 'D_66', 'D_68']```
