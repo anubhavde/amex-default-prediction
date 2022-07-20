@@ -21,9 +21,6 @@ kaggle competitions download -c amex-default-prediction
 ```
 Also download datasets given [here](https://www.kaggle.com/datasets/mirfanazam/amex-prediction-starter-level-1) and [here](https://www.kaggle.com/datasets/mirfanazam/amex-prediction-starter-level-2)
 
-##### Part of Kaggle challenge
-
-
 ### Data Description
 The objective of this competition is to predict the probability that a customer does not pay back their credit card balance amount in the future based on their monthly customer profile. The target binary variable is calculated by observing 18 months performance window after the latest credit card statement, and if the customer does not pay due amount in 120 days after their latest statement date it is considered a default event.
 
