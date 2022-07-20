@@ -14,27 +14,15 @@ In this competition, you’ll apply your machine learning skills to predict cred
 
 If successful, you'll help create a better customer experience for cardholders by making it easier to be approved for a credit card. Top solutions could challenge the credit default prediction model used by the world's largest payment card issuer—earning you cash prizes, the opportunity to interview with American Express, and potentially a rewarding new career.
 
-### Evaluation
-The evaluation metric, M, for this competition is the mean of two measures of rank ordering: Normalized Gini Coefficient, G, and default rate captured at 4%, D.
 
-```M=0.5⋅(G+D)```
-
-The default rate captured at 4% is the percentage of the positive labels (defaults) captured within the highest-ranked 4% of the predictions, and represents a Sensitivity/Recall statistic.
-
-For both of the sub-metrics G
-and D, the negative labels are given a weight of 20 to adjust for downsampling.
-
-This metric has a maximum value of 1.0.
-
-### Submission File
-For each ```customer_ID``` in the test set, you must predict a probability for the ```target``` variable. The file should contain a header and have the following format:
+Use the Kaggle API to access the dataset by running
+```Python
+kaggle competitions download -c amex-default-prediction
 ```
-customer_ID,prediction
-00000469ba...,0.01
-00001bf2e7...,0.22
-0000210045...,0.98
-etc.
-```
+Also download datasets given [here](https://www.kaggle.com/datasets/mirfanazam/amex-prediction-starter-level-1) and [here](https://www.kaggle.com/datasets/mirfanazam/amex-prediction-starter-level-2)
+
+##### Part of Kaggle challenge
+
 
 ### Data Description
 The objective of this competition is to predict the probability that a customer does not pay back their credit card balance amount in the future based on their monthly customer profile. The target binary variable is calculated by observing 18 months performance window after the latest credit card statement, and if the customer does not pay due amount in 120 days after their latest statement date it is considered a default event.
@@ -62,9 +50,4 @@ Note that the negative class has been subsampled for this dataset at 5%, and thu
 - test_data.csv - corresponding test data; your objective is to predict the target label for each customer_ID
 - sample_submission.csv - a sample submission file in the correct format
 
-Use the Kaggle API to access the dataset by running
-```Python
-kaggle competitions download -c amex-default-prediction
-```
-
-##### Part of Kaggle challenge
+##### Part of [Kaggle Challenge](https://www.kaggle.com/competitions/amex-default-prediction)
